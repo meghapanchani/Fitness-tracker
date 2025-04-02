@@ -15,18 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="workout.c">
+    <ClCompile Include="Fitness_Workout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="meal_plan.c">
+    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="workout.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="meal_plan.h">
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
