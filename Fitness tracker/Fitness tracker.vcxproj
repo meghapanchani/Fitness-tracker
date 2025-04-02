@@ -127,10 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+ 
+    <ClCompile Include="user_profile.c" />
     <ClCompile Include="meal_plan.c" />
     <ClCompile Include="workout.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="user_profile.h" />
     <ClInclude Include="meal_plan.h" />
     <ClInclude Include="workout.h" />
   </ItemGroup>

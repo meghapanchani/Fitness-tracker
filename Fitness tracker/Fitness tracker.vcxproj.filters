@@ -15,6 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+<ItemGroup>
+    <ClCompile Include="user_profile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="workout.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -22,11 +26,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
   <ItemGroup>
+<ItemGroup>
+    <ClInclude Include="user_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="workout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="meal_plan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
