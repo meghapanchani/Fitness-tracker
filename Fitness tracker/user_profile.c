@@ -1,10 +1,9 @@
 
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 #include "user_profile.h"
-
-
 
 // Function to initialize a user profile
 void create_profile(UserProfile* profile, const char* name, int age, float height, float weight, const char* goals, int workout_days) {
@@ -63,6 +62,7 @@ void save_profile_to_file(const UserProfile* profile, const char* filename) {
     printf("Profile saved successfully to %s\n", filename);
 }
 
+
 int isOnlyLetters(const char* str) {
     int hasLetter = 0;
     for (int i = 0; str[i]; i++) {
@@ -75,4 +75,5 @@ int isOnlyLetters(const char* str) {
     }
     return hasLetter; 
 }
+
 

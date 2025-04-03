@@ -127,15 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<ItemGroup>
+    <ClInclude Include="feedback.h" />
+    <ClInclude Include="report.h" />
+    <ClInclude Include="user_profile.h" />
+    <ClInclude Include="meal_plan.h" />
+    <ClInclude Include="workout.h" />
+  </ItemGroup>
+   <ItemGroup>
+    <ClCompile Include="feedback.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="report.c" />
     <ClCompile Include="user_profile.c" />
     <ClCompile Include="meal_plan.c" />
     <ClCompile Include="workout.c" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="user_profile.h" />
-    <ClInclude Include="meal_plan.h" />
-    <ClInclude Include="workout.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

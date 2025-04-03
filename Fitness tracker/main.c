@@ -1,10 +1,11 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "user_profile.h"
 #include "workout.h"
 #include "meal_plan.h"
+#include "report.h"
+#include "feedback.h"
 
 
 int main() {
@@ -139,6 +140,50 @@ int main() {
     // Free dynamically allocated memory
     freeWorkoutMemory();
 
+    WorkoutLog* workouts = malloc(50 * sizeof(WorkoutLog));
+    MealLog* meals = malloc(50 * sizeof(MealLog));
 
+    if (workouts == NULL || meals == NULL) {
+        printf("Memory allocation failed!\n");
+        return 1;
+    }
+    
+  // Track workouts
+    char choice;
+    printf("\nDo you want to log workouts? (y/n): ");
+    scanf_s(" %c", &choice, 1);
+    (void)getchar();
+
+    while (choice == 'y' || choice == 'Y') {
+        track_workout_progress(workouts, &workout_count);
+        printf("Log another workout? (y/n): ");
+        scanf_s(" %c", &choice, 1);
+        (void)getchar();
+    }
+
+    // Track meals
+    printf("\nDo you want to log meals? (y/n): ");
+    scanf_s(" %c", &choice, 1);
+    (void)getchar();
+
+    while (choice == 'y' || choice == 'Y') {
+        track_meal_adherence(meals, &meal_count);
+        printf("Log another meal? (y/n): ");
+        scanf_s(" %c", &choice, 1);
+        (void)getchar();
+    }
+
+    // Generate and save report
+    WeeklyReport report = generate_weekly_report(workouts, workout_count, meals, meal_count);
+    save_weekly_report(&report);
+
+    // Send motivational message
+    float consistency_score = (float)(workout_count + meal_count) / 10.0f;
+    printf("\n%s\n", send_motivational_message(consistency_score));
+
+    free(workouts);
+    free(meals);
+  
     return 0;
 }
+

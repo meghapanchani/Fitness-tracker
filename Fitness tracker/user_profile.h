@@ -19,7 +19,9 @@ void calculate_bmi(UserProfile* profile);
 void display_profile(const UserProfile* profile);
 void save_profile_to_file(const UserProfile* profile, const char* filename);
 
+
 int isOnlyLetters(const char* str);
+
 
 
 
