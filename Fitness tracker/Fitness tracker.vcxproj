@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
- 
+    <ClCompile Include="main.c" />
     <ClCompile Include="user_profile.c" />
     <ClCompile Include="meal_plan.c" />
     <ClCompile Include="workout.c" />

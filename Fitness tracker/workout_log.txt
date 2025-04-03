@@ -1,0 +1,10 @@
+
+Workout Log for: Chest, Shoulders, Triceps & Back, Biceps
+Exercise: Bench Press, Sets: 3, Reps: 10, Weight: 37.0 kg
+Exercise: Shoulder Press, Sets: 3, Reps: 3, Weight: 3.0 kg
+Exercise: Lat Pulldown, Sets: 3, Reps: 3, Weight: 3.0 kg
+Exercise: Horizontal Pull, Sets: 3, Reps: 3, Weight: 3.0 kg
+Exercise: Lateral Raises, Sets: 3, Reps: 3, Weight: 3.0 kg
+Exercise: Rope Triceps, Sets: 3, Reps: 3, Weight: 3.0 kg
+Exercise: Dumbbell Curl, Sets: 3, Reps: 3, Weight: 3.0 kg
+Exercise: Rope Hammer Curl, Sets: 3, Reps: 3, Weight: 3.0 kg

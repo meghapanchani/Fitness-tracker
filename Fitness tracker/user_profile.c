@@ -1,6 +1,10 @@
+
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 #include "user_profile.h"
+
+
 
 // Function to initialize a user profile
 void create_profile(UserProfile* profile, const char* name, int age, float height, float weight, const char* goals, int workout_days) {
@@ -16,8 +20,7 @@ void create_profile(UserProfile* profile, const char* name, int age, float heigh
 // Function to calculate BMI
 void calculate_bmi(UserProfile* profile) {
     if (profile->height > 0) {
-        float height_m = (float)(profile->height / 100.0); // Convert cm to meters
-
+        float height_m = profile->height / 100.0; // Convert cm to meters
         profile->bmi = profile->weight / (height_m * height_m);
     }
     else {
@@ -59,3 +62,17 @@ void save_profile_to_file(const UserProfile* profile, const char* filename) {
     fclose(file);
     printf("Profile saved successfully to %s\n", filename);
 }
+
+int isOnlyLetters(const char* str) {
+    int hasLetter = 0;
+    for (int i = 0; str[i]; i++) {
+        if (isalpha(str[i])) {
+            hasLetter = 1;
+        }
+        else if (str[i] != ' ') {
+            return 0; 
+        }
+    }
+    return hasLetter; 
+}
+

@@ -1,0 +1,7 @@
+Name: megha
+Age: 20
+Height: 157.00 cm
+Weight: 20.00 kg
+Workout Days per Week: 5
+Goals: for staying fit 
+BMI: 8.11

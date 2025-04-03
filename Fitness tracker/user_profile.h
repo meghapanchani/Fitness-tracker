@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #ifndef USER_PROFILE_H
 #define USER_PROFILE_H
 
@@ -19,5 +18,9 @@ void create_profile(UserProfile* profile, const char* name, int age, float heigh
 void calculate_bmi(UserProfile* profile);
 void display_profile(const UserProfile* profile);
 void save_profile_to_file(const UserProfile* profile, const char* filename);
+
+int isOnlyLetters(const char* str);
+
+
 
 #endif // USER_PROFILE_H

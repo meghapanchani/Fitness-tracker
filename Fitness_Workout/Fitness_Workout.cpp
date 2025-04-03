@@ -1,10 +1,15 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+#define _CRT_SECURE_NO_WARNINGS
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 extern "C"
 {
+#include "../Fitness tracker/main.c"
+#include "../Fitness tracker/workout.c"
+#include "../Fitness tracker/meal_plan.c"
+#include "../Fitness tracker/user_profile.c"
 #include "../Fitness tracker/workout.h"
 #include "../Fitness tracker/meal_plan.h"
 #include "../Fitness tracker/user_profile.h"

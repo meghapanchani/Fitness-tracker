@@ -1,10 +1,13 @@
 //meal_plan.c
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
 #include "meal_plan.h"
+
+
 
 
 // Meal options categorized by BMI
