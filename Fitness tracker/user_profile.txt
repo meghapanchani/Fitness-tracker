@@ -1,0 +1,7 @@
+Name: Cheryl
+Age: 18
+Height: 179.00 cm
+Weight: 85.00 kg
+Workout Days per Week: 3
+Goals: cc
+BMI: 26.53
