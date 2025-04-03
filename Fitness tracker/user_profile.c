@@ -1,5 +1,8 @@
+
+
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 #include "user_profile.h"
 
 // Function to initialize a user profile
@@ -34,9 +37,9 @@ void display_profile(const UserProfile* profile) {
     printf("Workout Days per Week: %d\n", profile->workout_days);
     printf("Goals: %s\n", profile->goals);
     printf("BMI: %.2f (Category: %s)\n", profile->bmi,
-        (profile->bmi < 18.5) ? "Underweight" :
-        (profile->bmi < 24.9) ? "Normal weight" :
-        (profile->bmi < 29.9) ? "Overweight" : "Obese");
+        (profile->bmi <= 19.5) ? "Underweight" :
+        (profile->bmi <= 28.9) ? "Normal weight" :
+        (profile->bmi <= 38.9) ? "Overweight" : "Obese");
 }
 
 // Function to save user profile to a file
@@ -58,3 +61,19 @@ void save_profile_to_file(const UserProfile* profile, const char* filename) {
     fclose(file);
     printf("Profile saved successfully to %s\n", filename);
 }
+
+
+int isOnlyLetters(const char* str) {
+    int hasLetter = 0;
+    for (int i = 0; str[i]; i++) {
+        if (isalpha(str[i])) {
+            hasLetter = 1;
+        }
+        else if (str[i] != ' ') {
+            return 0; 
+        }
+    }
+    return hasLetter; 
+}
+
+

@@ -15,40 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-<ItemGroup>
-    <ClCompile Include="feedback.c">
+    <ClCompile Include="Fitness_Workout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="report.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="user_profile.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="workout.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="meal_plan.c">
+    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-<ItemGroup>
-    <ClInclude Include="feedback.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="report.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="user_profile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="workout.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="meal_plan.h">
+  <ItemGroup>
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
